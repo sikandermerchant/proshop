@@ -2,6 +2,7 @@ import React from 'react'
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'
 import logo from '../assets/logo.png'
+import {FaShoppingCart, FaUser} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -19,12 +20,12 @@ const Header = () => {
             <Nav className="ms-auto">
               <LinkContainer to='/cart'>
                 <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i>Cart
+                  <FaShoppingCart/> Cart
                  </Nav.Link>
               </LinkContainer>
               <LinkContainer to='/login'>
                 <Nav.Link>
-                  <i className='fas fa-user'></i>Sign In
+                  <FaUser/> Sign In
                 </Nav.Link>
               </LinkContainer>
             </Nav>
